@@ -20,6 +20,7 @@
   font-size: medium;
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 .nav-item:hover {
   background-color: azure;
@@ -53,6 +54,7 @@
   font-family: Verdana;
 }
 
+/* My Image */
 .pass {
   width: 30%;
   height: 40%;
@@ -63,7 +65,10 @@
   justify-content: center;
   padding-top: 1em;
 }
-main {
+.Gmain,
+.Gmain1,
+.Gmain2,
+.Gmain3 {
   background-color: azure;
   padding-bottom: 3em;
 }
@@ -115,6 +120,7 @@ footer {
   align-items: center;
   margin: opx;
   padding: 2em;
+  margin-bottom: auto;
 }
 .Gbrand {
   text-align: center;
@@ -124,4 +130,89 @@ footer {
 }
 .brand:hover {
   transform: scale(1.5);
+}
+.foot1,
+.foot2,
+.Gbrand {
+  margin: 3px 0px;
+}
+
+/* Contact Me/Registration/login in Page*/
+.Gmain1,
+.Gmain2,
+.Gmain3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4em;
+}
+form {
+  background-color: rgba(229, 255, 0, 0.582);
+  padding: 2em 2em;
+  border: 5px solid black;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 1em 2em;
+  width: 80%;
+  height: 80%;
+  margin-bottom: 2em;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #eee;
+  border-radius: 8px;
+}
+input[type="submit"] {
+  width: 80%;
+  background-color: aqua;
+  color: black;
+  cursor: pointer;
+  margin-left: 3em;
+  border: 0;
+}
+input[type="submit"]:hover {
+  background-color: hsl(176, 68%, 64%);
+}
+.fpass,
+.sign {
+  font-size: medium;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.sign:hover,
+.fpass:hover {
+  background-color: azure;
+  color: black;
+  padding: 10px;
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(14, 13, 13, 0.5);
+}
+input:valid,
+input:in-range {
+  border-color: green;
+}
+input:invalid,
+input:out-of-range {
+  border-color: red;
+}
+
+/* Responsiveness*/
+@media screen and (min-width: 768px) {
+  form {
+    background-color: rgba(229, 255, 0, 0.582);
+    padding: 2em 2em;
+    border: 5px solid black;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 1em 2em;
+    width: 50%;
+    height: 50%;
+    margin-bottom: 2em;
+  }
 }
