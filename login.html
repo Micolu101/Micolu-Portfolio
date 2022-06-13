@@ -22,33 +22,27 @@
       <p class="desc1">Login in to your account.</p>
     </header>
 
-    <main>
+    <main class="Gmain3">
       <h5>Input in the email and password that you registered with</h5>
       <form action="index.html">
-        <table>
-          <tr>
-            <td><label for="email"></label>Email:</td>
-          </tr>
-          <tr>
-            <td><input type="email" name="email" id="email" /></td>
-          </tr>
-          <tr>
-            <td><label for="password"></label>Password:</td>
-          </tr>
-          <tr>
-            <td><input type="password" name="password" id="password" /></td>
-          </tr>
-          <tr>
-            <td><a class="nav-item" href="">forget your password?</a></td>
-          </tr>
-        </table>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required /><br />
+
         <input type="submit" value="Sign in" />
+        <br /><br />
+        <a class="fpass" href="">forget your password?</a> <br /><br />
       </form>
-      <p>don't have an account yet? <a href="registration.html"> Sign-up</a></p>
+      <p>
+        don't have an account yet?
+        <a class="sign" href="registration.html"> Sign-up</a>
+      </p>
     </main>
     <footer>
-      <p>Designed and Developed by MICOLU TECH</p>
-      <div>
+      <p class="foot1">Designed and Developed by MICOLU TECH</p>
+      <div class="Gbrand">
         <a href=""
           ><img class="brand" src="image/mail-logo.png" alt="email icon"
         /></a>
@@ -68,7 +62,7 @@
             alt="instagram icon"
         /></a>
       </div>
-      <p>Copyright &copy; 2022</p>
+      <p class="foot2">Copyright &copy; 2022- All right reserved</p>
     </footer>
   </body>
 </html>
